@@ -1,0 +1,146 @@
+Aug  7 08:50:28 test-Virtual-Machine systemd[1]: logrotate.service: Succeeded.
+Aug  7 08:50:28 test-Virtual-Machine systemd[1]: Started Rotate log files.
+Aug  7 08:50:29 test-Virtual-Machine systemd[1]: man-db.service: Succeeded.
+Aug  7 08:50:29 test-Virtual-Machine systemd[1]: Started Daily man-db regeneration.
+Aug  7 08:50:29 test-Virtual-Machine 50-motd-news[56337]:  * Keen to learn Istio? It's included in the single-package MicroK8s.
+Aug  7 08:50:29 test-Virtual-Machine 50-motd-news[56337]:      https://snapcraft.io/microk8s
+Aug  7 08:50:29 test-Virtual-Machine systemd[1]: motd-news.service: Succeeded.
+Aug  7 08:50:29 test-Virtual-Machine systemd[1]: Started Message of the Day.
+Aug  7 08:50:30 test-Virtual-Machine dhclient[56074]: DHCPREQUEST for 192.168.89.205 on eth0 to 192.168.89.193 port 67 (xid=0xe2133a7)
+Aug  7 08:50:30 test-Virtual-Machine dhclient[56074]: DHCPACK of 192.168.89.205 from 192.168.89.193 (xid=0xa733210e)
+Aug  7 08:50:30 test-Virtual-Machine NetworkManager[474]: <info>  [1565193030.0166] dhcp4 (eth0):   address 192.168.89.205
+Aug  7 08:50:30 test-Virtual-Machine NetworkManager[474]: <info>  [1565193030.0172] dhcp4 (eth0):   plen 28 (255.255.255.240)
+Aug  7 08:50:30 test-Virtual-Machine NetworkManager[474]: <info>  [1565193030.0174] dhcp4 (eth0):   gateway 192.168.89.193
+Aug  7 08:50:30 test-Virtual-Machine NetworkManager[474]: <info>  [1565193030.0175] dhcp4 (eth0):   lease time 86400
+Aug  7 08:50:30 test-Virtual-Machine NetworkManager[474]: <info>  [1565193030.0177] dhcp4 (eth0):   nameserver '192.168.89.193'
+Aug  7 08:50:30 test-Virtual-Machine NetworkManager[474]: <info>  [1565193030.0178] dhcp4 (eth0):   domain name 'mshome.net'
+Aug  7 08:50:30 test-Virtual-Machine NetworkManager[474]: <info>  [1565193030.0180] dhcp4 (eth0): state changed bound -> bound
+Aug  7 08:50:30 test-Virtual-Machine dbus-daemon[465]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.12' (uid=0 pid=474 comm="/usr/sbin/NetworkManager --no-daemon " label="unconfined")
+Aug  7 08:50:30 test-Virtual-Machine systemd[1]: Starting Network Manager Script Dispatcher Service...
+Aug  7 08:50:30 test-Virtual-Machine dhclient[56074]: bound to 192.168.89.205 -- renewal in 290 seconds.
+Aug  7 08:50:30 test-Virtual-Machine dbus-daemon[465]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug  7 08:50:30 test-Virtual-Machine systemd[1]: Started Network Manager Script Dispatcher Service.
+Aug  7 08:50:30 test-Virtual-Machine nm-dispatcher: req:1 'dhcp4-change' [eth0]: new request (1 scripts)
+Aug  7 08:50:30 test-Virtual-Machine nm-dispatcher: req:1 'dhcp4-change' [eth0]: start running ordered scripts...
+Aug  7 08:50:31 test-Virtual-Machine dbus-daemon[465]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.1806' (uid=0 pid=56689 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+Aug  7 08:50:31 test-Virtual-Machine systemd[1]: Starting PackageKit Daemon...
+Aug  7 08:50:31 test-Virtual-Machine PackageKit: daemon start
+Aug  7 08:50:31 test-Virtual-Machine dbus-daemon[465]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Aug  7 08:50:31 test-Virtual-Machine systemd[1]: Started PackageKit Daemon.
+Aug  7 08:50:38 test-Virtual-Machine dbus-daemon[465]: [system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service' requested by ':1.217' (uid=1000 pid=1572 comm="/usr/bin/gnome-software --gapplication-service " label="unconfined")
+Aug  7 08:50:38 test-Virtual-Machine systemd[1]: Starting Firmware update daemon...
+Aug  7 08:50:38 test-Virtual-Machine gnome-software[1572]: Only 0 apps for recent list, hiding
+Aug  7 08:50:38 test-Virtual-Machine dbus-daemon[465]: [system] Successfully activated service 'org.freedesktop.fwupd'
+Aug  7 08:50:38 test-Virtual-Machine systemd[1]: Started Firmware update daemon.
+Aug  7 08:50:40 test-Virtual-Machine gnome-software[1572]: hiding category audio-video featured applications: found only 0 to show, need at least 9
+Aug  7 08:50:40 test-Virtual-Machine systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Aug  7 08:50:43 test-Virtual-Machine systemd[1]: apt-daily.service: Succeeded.
+Aug  7 08:50:43 test-Virtual-Machine systemd[1]: Started Daily apt download activities.
+Aug  7 08:50:43 test-Virtual-Machine systemd[1]: Starting Daily apt upgrade and clean activities...
+Aug  7 08:50:59 test-Virtual-Machine systemd[1]: apt-daily-upgrade.service: Succeeded.
+Aug  7 08:50:59 test-Virtual-Machine systemd[1]: Started Daily apt upgrade and clean activities.
+Aug  7 08:52:21 test-Virtual-Machine gnome-shell[1023]: Could not delete runtime/persistent state file: Error removing file /run/user/1000/gnome-shell/runtime-state-LE.:0/screenShield.locked: No such file or directory
+Aug  7 08:54:02 test-Virtual-Machine gnome-shell[1023]: g_environ_setenv: assertion 'value != NULL' failed
+Aug  7 08:54:03 test-Virtual-Machine tracker-miner-f[1249]: Could not process 'file:///home/test/%23787725': Error when getting information for file “/home/test/#787725”: No such file or directory
+Aug  7 08:54:13 test-Virtual-Machine dbus-daemon[890]: [session uid=1000 pid=890] Activating via systemd: service name='org.bluez.obex' unit='dbus-org.bluez.obex.service' requested by ':1.126' (uid=1000 pid=57668 comm="gnome-control-center " label="unconfined")
+Aug  7 08:54:13 test-Virtual-Machine systemd[865]: Starting Bluetooth OBEX service...
+Aug  7 08:54:13 test-Virtual-Machine obexd[57681]: OBEX daemon 5.50
+Aug  7 08:54:13 test-Virtual-Machine dbus-daemon[890]: [session uid=1000 pid=890] Successfully activated service 'org.bluez.obex'
+Aug  7 08:54:13 test-Virtual-Machine systemd[865]: Started Bluetooth OBEX service.
+Aug  7 08:54:27 test-Virtual-Machine dbus-daemon[465]: [system] Activating service name='com.ubuntu.WhoopsiePreferences' requested by ':1.1822' (uid=1000 pid=57668 comm="gnome-control-center " label="unconfined") (using servicehelper)
+Aug  7 08:54:27 test-Virtual-Machine dbus-daemon[57683]: [system] Failed to reset fd limit before activating service: org.freedesktop.DBus.Error.AccessDenied: Failed to restore old fd limit: Operation not permitted
+Aug  7 08:54:27 test-Virtual-Machine dbus-daemon[465]: [system] Successfully activated service 'com.ubuntu.WhoopsiePreferences'
+Aug  7 08:54:27 test-Virtual-Machine com.ubuntu.WhoopsiePreferences[465]: Acquired the name: com.ubuntu.WhoopsiePreferences
+Aug  7 08:54:27 test-Virtual-Machine dbus-daemon[465]: [system] Activating via systemd: service name='org.freedesktop.GeoClue2' unit='geoclue.service' requested by ':1.1822' (uid=1000 pid=57668 comm="gnome-control-center " label="unconfined")
+Aug  7 08:54:27 test-Virtual-Machine systemd[1]: Starting Location Lookup Service...
+Aug  7 08:54:27 test-Virtual-Machine gnome-control-c[57668]: Failed fetch permissions from flatpak permission store: GDBus.Error:org.freedesktop.portal.Error.NotFound: No entry for location
+Aug  7 08:54:27 test-Virtual-Machine dbus-daemon[465]: [system] Successfully activated service 'org.freedesktop.GeoClue2'
+Aug  7 08:54:27 test-Virtual-Machine systemd[1]: Started Location Lookup Service.
+Aug  7 08:54:35 test-Virtual-Machine gnome-control-c[57668]: [registry] ../src/grl-registry.c:1461: Plugin 'grl-flickr' not available
+Aug  7 08:54:35 test-Virtual-Machine gnome-control-c[57668]: Plugin “grl-flickr” not available
+Aug  7 08:54:49 test-Virtual-Machine dbus-daemon[465]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.1822' (uid=1000 pid=57668 comm="gnome-control-center " label="unconfined")
+Aug  7 08:54:49 test-Virtual-Machine systemd[1]: Starting Hostname Service...
+Aug  7 08:54:49 test-Virtual-Machine dbus-daemon[465]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Aug  7 08:54:49 test-Virtual-Machine systemd[1]: Started Hostname Service.
+Aug  7 08:54:57 test-Virtual-Machine gnome-shell[1023]: g_environ_setenv: assertion 'value != NULL' failed
+Aug  7 08:54:57 test-Virtual-Machine hyper.desktop[1023]: Disabling Chromium GPU blacklist
+Aug  7 08:54:57 test-Virtual-Machine hyper.desktop[1023]: running in prod mode
+Aug  7 08:54:57 test-Virtual-Machine hyper.desktop[1023]: electron will open file:///opt/Hyper/resources/app.asar/index.html
+Aug  7 08:54:57 test-Virtual-Machine dbus-daemon[465]: [system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service' requested by ':1.1863' (uid=1000 pid=57735 comm="/opt/Hyper/hyper " label="unconfined")
+Aug  7 08:54:57 test-Virtual-Machine systemd[1]: Condition check resulted in Bluetooth service being skipped.
+Aug  7 08:54:58 test-Virtual-Machine hyper.desktop[1023]: Setting Hyper as default client for ssh:// protocol
+Aug  7 08:54:58 test-Virtual-Machine hyper.desktop[1023]: Checking for notification messages
+Aug  7 08:54:59 test-Virtual-Machine hyper.desktop[1023]: No matching notification messages
+Aug  7 08:55:19 test-Virtual-Machine systemd[1]: systemd-hostnamed.service: Succeeded.
+Aug  7 08:55:20 test-Virtual-Machine dhclient[56074]: DHCPREQUEST for 192.168.89.205 on eth0 to 192.168.89.193 port 67 (xid=0xe2133a7)
+Aug  7 08:55:20 test-Virtual-Machine dhclient[56074]: DHCPACK of 192.168.89.205 from 192.168.89.193 (xid=0xa733210e)
+Aug  7 08:55:20 test-Virtual-Machine NetworkManager[474]: <info>  [1565193320.3852] dhcp4 (eth0):   address 192.168.89.205
+Aug  7 08:55:20 test-Virtual-Machine NetworkManager[474]: <info>  [1565193320.3861] dhcp4 (eth0):   plen 28 (255.255.255.240)
+Aug  7 08:55:20 test-Virtual-Machine NetworkManager[474]: <info>  [1565193320.3864] dhcp4 (eth0):   gateway 192.168.89.193
+Aug  7 08:55:20 test-Virtual-Machine NetworkManager[474]: <info>  [1565193320.3869] dhcp4 (eth0):   lease time 86400
+Aug  7 08:55:20 test-Virtual-Machine NetworkManager[474]: <info>  [1565193320.3872] dhcp4 (eth0):   nameserver '192.168.89.193'
+Aug  7 08:55:20 test-Virtual-Machine NetworkManager[474]: <info>  [1565193320.3876] dhcp4 (eth0):   domain name 'mshome.net'
+Aug  7 08:55:20 test-Virtual-Machine NetworkManager[474]: <info>  [1565193320.3878] dhcp4 (eth0): state changed bound -> bound
+Aug  7 08:55:20 test-Virtual-Machine dbus-daemon[465]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.12' (uid=0 pid=474 comm="/usr/sbin/NetworkManager --no-daemon " label="unconfined")
+Aug  7 08:55:20 test-Virtual-Machine systemd[1]: Starting Network Manager Script Dispatcher Service...
+Aug  7 08:55:20 test-Virtual-Machine dhclient[56074]: bound to 192.168.89.205 -- renewal in 232 seconds.
+Aug  7 08:55:20 test-Virtual-Machine dbus-daemon[465]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug  7 08:55:20 test-Virtual-Machine systemd[1]: Started Network Manager Script Dispatcher Service.
+Aug  7 08:55:20 test-Virtual-Machine nm-dispatcher: req:1 'dhcp4-change' [eth0]: new request (1 scripts)
+Aug  7 08:55:20 test-Virtual-Machine nm-dispatcher: req:1 'dhcp4-change' [eth0]: start running ordered scripts...
+Aug  7 08:55:27 test-Virtual-Machine geoclue[57695]: Service not used for 60 seconds. Shutting down..
+Aug  7 08:55:27 test-Virtual-Machine systemd[1]: geoclue.service: Main process exited, code=killed, status=15/TERM
+Aug  7 08:55:27 test-Virtual-Machine systemd[1]: geoclue.service: Succeeded.
+Aug  7 08:55:28 test-Virtual-Machine anacron[56343]: Job `cron.daily' started
+Aug  7 08:55:28 test-Virtual-Machine anacron[57867]: Updated timestamp for job `cron.daily' to 2019-08-07
+Aug  7 08:55:28 test-Virtual-Machine cracklib: no dictionary update necessary.
+Aug  7 08:55:30 test-Virtual-Machine systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Aug  7 08:55:30 test-Virtual-Machine anacron[56343]: Job `cron.daily' terminated
+Aug  7 08:55:30 test-Virtual-Machine anacron[56343]: Normal exit (1 job run)
+Aug  7 08:55:30 test-Virtual-Machine systemd[1]: anacron.service: Succeeded.
+Aug  7 08:55:54 test-Virtual-Machine gnome-control-c[57668]: Failed to register object: An object is already exported for the interface org.bluez.Agent1 at /org/gnome/bluetooth/settings
+Aug  7 08:55:55 test-Virtual-Machine dbus-daemon[465]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.1822' (uid=1000 pid=57668 comm="gnome-control-center " label="unconfined")
+Aug  7 08:55:55 test-Virtual-Machine systemd[1]: Starting Hostname Service...
+Aug  7 08:55:56 test-Virtual-Machine dbus-daemon[465]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Aug  7 08:55:56 test-Virtual-Machine systemd[1]: Started Hostname Service.
+Aug  7 08:56:02 test-Virtual-Machine PackageKit: daemon quit
+Aug  7 08:56:02 test-Virtual-Machine systemd[1]: packagekit.service: Main process exited, code=killed, status=15/TERM
+Aug  7 08:56:02 test-Virtual-Machine systemd[1]: packagekit.service: Succeeded.
+Aug  7 08:56:26 test-Virtual-Machine systemd[1]: systemd-hostnamed.service: Succeeded.
+Aug  7 08:56:42 test-Virtual-Machine systemd[1]: Started Session 120 of user test.
+Aug  7 08:57:22 test-Virtual-Machine org.gnome.Shell.desktop[1023]: Window manager warning: last_user_time (195980207) is greater than comparison timestamp (195980192).  This most likely represents a buggy client sending inaccurate timestamps in messages such as _NET_ACTIVE_WINDOW.  Trying to work around...
+Aug  7 08:57:22 test-Virtual-Machine org.gnome.Shell.desktop[1023]: Window manager warning: 0x3000005 appears to be one of the offending windows with a timestamp of 195980207.  Working around...
+Aug  7 08:57:30 test-Virtual-Machine gnome-shell[1023]: g_environ_setenv: assertion 'value != NULL' failed
+Aug  7 08:57:30 test-Virtual-Machine dbus-daemon[890]: [session uid=1000 pid=890] Activating service name='org.gnome.Nautilus' requested by ':1.12' (uid=1000 pid=1023 comm="/usr/bin/gnome-shell " label="unconfined")
+Aug  7 08:57:30 test-Virtual-Machine dbus-daemon[890]: [session uid=1000 pid=890] Successfully activated service 'org.gnome.Nautilus'
+Aug  7 08:57:30 test-Virtual-Machine dbus-daemon[465]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.1947' (uid=1000 pid=58142 comm="/usr/bin/nautilus --gapplication-service " label="unconfined")
+Aug  7 08:57:30 test-Virtual-Machine systemd[1]: Starting Hostname Service...
+Aug  7 08:57:30 test-Virtual-Machine nautilus[58142]: Called "net usershare info" but it failed: Failed to execute child process “net” (No such file or directory)
+Aug  7 08:57:31 test-Virtual-Machine dbus-daemon[465]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Aug  7 08:57:31 test-Virtual-Machine systemd[1]: Started Hostname Service.
+Aug  7 08:58:01 test-Virtual-Machine systemd[1]: systemd-hostnamed.service: Succeeded.
+Aug  7 08:59:12 test-Virtual-Machine dhclient[56074]: DHCPREQUEST for 192.168.89.205 on eth0 to 192.168.89.193 port 67 (xid=0xe2133a7)
+Aug  7 08:59:12 test-Virtual-Machine dhclient[56074]: DHCPACK of 192.168.89.205 from 192.168.89.193 (xid=0xa733210e)
+Aug  7 08:59:13 test-Virtual-Machine NetworkManager[474]: <info>  [1565193553.0046] dhcp4 (eth0):   address 192.168.89.205
+Aug  7 08:59:13 test-Virtual-Machine NetworkManager[474]: <info>  [1565193553.0054] dhcp4 (eth0):   plen 28 (255.255.255.240)
+Aug  7 08:59:13 test-Virtual-Machine NetworkManager[474]: <info>  [1565193553.0057] dhcp4 (eth0):   gateway 192.168.89.193
+Aug  7 08:59:13 test-Virtual-Machine NetworkManager[474]: <info>  [1565193553.0059] dhcp4 (eth0):   lease time 86400
+Aug  7 08:59:13 test-Virtual-Machine NetworkManager[474]: <info>  [1565193553.0061] dhcp4 (eth0):   nameserver '192.168.89.193'
+Aug  7 08:59:13 test-Virtual-Machine NetworkManager[474]: <info>  [1565193553.0065] dhcp4 (eth0):   domain name 'mshome.net'
+Aug  7 08:59:13 test-Virtual-Machine NetworkManager[474]: <info>  [1565193553.0068] dhcp4 (eth0): state changed bound -> bound
+Aug  7 08:59:13 test-Virtual-Machine dbus-daemon[465]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.12' (uid=0 pid=474 comm="/usr/sbin/NetworkManager --no-daemon " label="unconfined")
+Aug  7 08:59:13 test-Virtual-Machine systemd[1]: Starting Network Manager Script Dispatcher Service...
+Aug  7 08:59:13 test-Virtual-Machine dhclient[56074]: bound to 192.168.89.205 -- renewal in 279 seconds.
+Aug  7 08:59:13 test-Virtual-Machine dbus-daemon[465]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug  7 08:59:13 test-Virtual-Machine systemd[1]: Started Network Manager Script Dispatcher Service.
+Aug  7 08:59:13 test-Virtual-Machine nm-dispatcher: req:1 'dhcp4-change' [eth0]: new request (1 scripts)
+Aug  7 08:59:13 test-Virtual-Machine nm-dispatcher: req:1 'dhcp4-change' [eth0]: start running ordered scripts...
+Aug  7 08:59:23 test-Virtual-Machine systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Aug  7 08:59:39 test-Virtual-Machine nautilus[58142]: Called "net usershare info" but it failed: Failed to execute child process “net” (No such file or directory)
+Aug  7 09:00:30 test-Virtual-Machine nautilus[58142]: g_object_ref: assertion 'G_IS_OBJECT (object)' failed
+Aug  7 09:00:57 test-Virtual-Machine dbus-daemon[890]: [session uid=1000 pid=890] Activating service name='org.gnome.gedit' requested by ':1.131' (uid=1000 pid=58142 comm="/usr/bin/nautilus --gapplication-service " label="unconfined")
+Aug  7 09:00:57 test-Virtual-Machine dbus-daemon[890]: [session uid=1000 pid=890] Successfully activated service 'org.gnome.gedit'
+Aug  7 09:01:19 test-Virtual-Machine dbus-daemon[465]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.1951' (uid=1000 pid=58142 comm="/usr/bin/nautilus --gapplication-service " label="unconfined")
+Aug  7 09:01:19 test-Virtual-Machine systemd[1]: Starting Hostname Service...
+Aug  7 09:01:20 test-Virtual-Machine dbus-daemon[465]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Aug  7 09:01:20 test-Virtual-Machine systemd[1]: Started Hostname Service.
