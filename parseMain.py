@@ -1,18 +1,27 @@
 #Justin Lazarski 2019
-infile = r"/home/test/Desktop/Parse/input/testLog.txt"
+infile = r"/home/test/Desktop/Parse/input/syslog.txt"
 
-important = []
-keep_phrases = [ "test","important","keep me","error"]
+#infile = r"/home/test/Desktop/Parse/input/testLog.txt"
+
+#usrPath = str(input("Input the path of the log file you want to parse: "))
+#nfile = r(path)
+#print(usrPath)
+
+relevant = []
+keywords = []
+
+usrInpt = str(input("Input a keyword to parse the file for: "))
+
+keywords.append(usrInpt)
+print(keywords)
 
 with open(infile) as f:
-	f = f.readlines()
+	#f = f.readlines()
+	for line in f:
+		for phrase in keywords:
+			if phrase in line:
+				relevant.append(line)
+				break
 
-for line in f:
-	for phrase in keep_phrases:
-		if phrase in line:
-			important.append(line)
-			break
-print(important)
-
-
-
+print("Relevant Lines: ")
+print(relevant)
